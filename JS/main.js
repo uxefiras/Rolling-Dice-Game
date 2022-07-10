@@ -69,11 +69,13 @@ holdDice.addEventListener("click", function() {
     diceNumberPlayer2.innerHTML = playersTottals[1];
 
     if (playersTottal[0] >= 100) {
+        diceImages.src = `./IMGs/Dice Vic.png`;
         king1.style.display = "inline-block";
         loser2.style.display = "inline-block";
         holdDice.disabled = true;
         rollDice.disabled = true;
     } else if (playersTottal[1] >= 100) {
+        diceImages.src = `./IMGs/Dice Vic.png`;
         king2.style.display = "inline-block";
         loser1.style.display = "inline-block";
         holdDice.disabled = true;
