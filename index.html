@@ -15,12 +15,36 @@
 </head>
 
 <body>
-    <!--[if lt IE 7]>
-      <p class="browsehappy">
-        You are using an <strong>outdated</strong> browser. Please
-        <a href="#">upgrade your browser</a> to improve your experience.
-      </p>
-    <![endif]-->
+    <section id="container">
+        <div class="player-space">
+            <div class="into-player-space left full-white">
+                <div class="name-tottal">
+                    <h1>Player 1</h1>
+                    <h2 class="player-1-total">0</h2>
+                </div>
+                <div class="rolled-dice-container">
+                    <h1 class="rolling-Number">0</h1>
+                </div>
+            </div>
+            <div class="into-player-space right">
+                <div class="name-tottal">
+                    <h1>Player 2</h1>
+                    <h2 class="player-2-total">0</h2>
+                </div>
+                <div class="rolled-dice-container">
+                    <h1 class="rolling-Number">0</h1>
+                </div>
+            </div>
+            <div class="reset-game-container location">
+                <button class="btn reset-game">🤝 New Game</button>
+            </div>
+
+            <div class="playing-roll-container location">
+                <button class="btn roll">🎲 Rolling</button>
+                <button class="btn hold">🏁 Hold</button>
+            </div>
+        </div>
+    </section>
 
     <script src="./JS/main.js" async defer></script>
 </body>

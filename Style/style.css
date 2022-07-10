@@ -5,3 +5,112 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+#container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+}
+
+.player-space {
+    width: 55%;
+    height: 70%;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.253);
+    border-radius: 15px;
+    box-shadow: 20px 20px 100px rgba(0, 0, 0, 0.5);
+}
+
+.into-player-space {
+    display: flex;
+    flex: 1;
+    border-radius: inherit;
+    background-color: rgba(255, 255, 255, 0.5);
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.into-player-space.left {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.into-player-space.right {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.rolling-Number {
+    background-color: #c471ed;
+    color: white;
+    font-weight: lighter;
+    border-radius: 5px;
+    padding: 3rem 6rem;
+}
+
+h2 {
+    text-align: center;
+    font-weight: lighter;
+}
+
+
+/*  Game Interaction Area  */
+
+.location {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.reset-game-container {
+    top: calc(100vh - 135%);
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #f64f59;
+    color: white;
+    font-weight: bold;
+}
+
+.btn:active {
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
+    transform: translateX(2px);
+    transition: all 0.1s ease-in-out;
+}
+
+.playing-roll-container {
+    display: flex;
+    flex-direction: column;
+    bottom: calc(100vh - 123%);
+}
+
+.roll {
+    margin-bottom: 1rem;
+}
+
+
+/* on Scripting  */
+
+.full-white {
+    background-color: white;
+}
