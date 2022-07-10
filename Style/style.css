@@ -20,7 +20,7 @@ body {
 }
 
 .player-space {
-    width: 55%;
+    width: 50%;
     height: 70%;
     display: flex;
     position: relative;
@@ -28,6 +28,15 @@ body {
     background-color: rgba(255, 255, 255, 0.253);
     border-radius: 15px;
     box-shadow: 20px 20px 100px rgba(0, 0, 0, 0.5);
+}
+
+.deic-images-container {
+    position: absolute;
+    top: calc(100vh - 115%);
+}
+
+.dice-faces {
+    width: 4rem;
 }
 
 .into-player-space {
@@ -51,11 +60,29 @@ body {
 }
 
 .rolling-Number {
-    background-color: #c471ed;
     color: white;
-    font-weight: lighter;
+    font-weight: normal;
     border-radius: 5px;
-    padding: 3rem 6rem;
+    padding: 3vh 4vw;
+    text-align: center;
+}
+
+.rn-player1 {
+    background-color: #12c2e9;
+}
+
+.rn-player2 {
+    background-color: #f64f59;
+}
+
+span {
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
+.into-rn-player1,
+.into-rn-player2 {
+    font-weight: bold;
 }
 
 h2 {
@@ -87,7 +114,7 @@ h2 {
 }
 
 .btn:hover {
-    background-color: #f64f59;
+    background-color: #c471ed;
     color: white;
     font-weight: bold;
 }
@@ -96,6 +123,10 @@ h2 {
     box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
     transform: translateX(2px);
     transition: all 0.1s ease-in-out;
+}
+
+.hold:hover {
+    background-color: rgb(5, 202, 126);
 }
 
 .playing-roll-container {
@@ -113,4 +144,25 @@ h2 {
 
 .full-white {
     background-color: white;
+    transition: all 0.5s ease-in-out;
+}
+
+h1 {
+    text-align: center;
+}
+
+.King1 {
+    display: none;
+}
+
+.loser1 {
+    display: none;
+}
+
+.King2 {
+    display: none;
+}
+
+.loser2 {
+    display: none;
 }
