@@ -17,7 +17,7 @@ const loser2 = document.querySelector(".loser2");
 
 //initializing the game
 let playerSide = 0;
-let playersTottal = [0, 0];
+let playersTottal = [95, 0];
 let playersTottals = [0, 0];
 let dice;
 
@@ -91,4 +91,9 @@ resetGame.addEventListener("click", function() {
     diceNumberPlayer2.innerHTML = playersTottals[1];
     holdDice.disabled = false;
     rollDice.disabled = false;
+    diceImages.src = `./IMGs/Dice ready.png`;
+    king1.style.display = "none";
+    king2.style.display = "none";
+    loser1.style.display = "none";
+    loser2.style.display = "none";
 });
