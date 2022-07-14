@@ -17,7 +17,7 @@ const loser2 = document.querySelector(".loser2");
 
 //initializing the game
 let playerSide = 0;
-let playersTottal = [95, 0];
+let playersTottal = [0, 0];
 let playersTottals = [0, 0];
 let dice;
 
@@ -85,6 +85,7 @@ holdDice.addEventListener("click", function() {
 
 resetGame.addEventListener("click", function() {
     playersTottals = [0, 0];
+    playersTottal = [0, 0];
     tottaPlayer1.innerHTML = playersTottals[0];
     tottaPlayer2.innerHTML = playersTottals[1];
     diceNumberPlayer1.innerHTML = playersTottals[0];
